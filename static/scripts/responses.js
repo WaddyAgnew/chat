@@ -12,6 +12,8 @@ function getBotResponse(input) {
         return "hello there!";
     }else if(input == "goodbye"){
         return "Talk to you later";
+    }else if(input == "hi"){
+        return "Whats your name";
     }else {
         return "Try asking something else..."
     }
