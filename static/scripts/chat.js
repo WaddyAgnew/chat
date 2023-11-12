@@ -98,5 +98,7 @@ $("#textInput").keypress(function(e){
     }
 })
 
+var messageBody = document.querySelector("#chatbox");
+messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 
 //calender project
