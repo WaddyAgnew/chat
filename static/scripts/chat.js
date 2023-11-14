@@ -1,5 +1,6 @@
 
 
+
 // Collapsible
 var coll = document.getElementsByClassName("collapsible");
 
@@ -72,6 +73,8 @@ function getResponse(){
         getHardResponse(userText);
     },1000)
 
+   // scrollj(); 
+    
 }
 
 function buttonSendText(sampleText){
@@ -85,6 +88,7 @@ function buttonSendText(sampleText){
 
 function sendButton(){
     getResponse();
+   // scrollj(); 
 }
 
 function heartButton(){
@@ -97,8 +101,24 @@ $("#textInput").keypress(function(e){
         getResponse();
     }
 })
+//function scrollj(){
+//var messageBody = document.querySelector('#chatbox');
+  //  messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 
-var messageBody = document.querySelector("#chatbox");
-messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
+const scrollingElement = document.getElementById("chatbox");
 
+const config = { childList: true };
+
+const callback = function (mutationsList, observer) {
+  for (let mutation of mutationsList) {
+    if (mutation.type === "childList") {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+  }
+};
+
+const observer = new MutationObserver(callback);
+observer.observe(scrollingElement, config);
+//}
+//scrollj(); 
 //calender project

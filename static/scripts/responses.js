@@ -19,3 +19,4 @@ function getBotResponse(input) {
     }
 
 }
+//scrollj();

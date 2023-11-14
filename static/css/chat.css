@@ -57,6 +57,9 @@
 }
 
 .chat-bar-input-block {
+    position:-webkit-sticky;
+    position: sticky;
+    bottom: 0;
     display: flex;
     float: left;
     box-sizing: border-box;
@@ -67,6 +70,7 @@
     border-radius: 10px 10px 0px 0px;
     padding: 10px 0px 10px 10px;
 }
+
 
 .chat-bar-icons {
     display: flex;
@@ -80,6 +84,9 @@
 #chat-icon:hover {
     opacity: .7;
 }
+
+
+
 
 /* Chat bubbles */
 
@@ -127,6 +134,8 @@
     font-weight: normal;
     font-size: 16px;
     text-align: left;
+
+    overflow-anchor: auto;
 }
 
 .botText span {
