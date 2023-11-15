@@ -102,8 +102,8 @@ $("#textInput").keypress(function(e){
     }
 })
 //function scrollj(){
-//var messageBody = document.querySelector('#chatbox');
-  //  messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
+var messageBody = document.querySelector('#chatbox');
+   messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 
 const scrollingElement = document.getElementById("chatbox");
 
