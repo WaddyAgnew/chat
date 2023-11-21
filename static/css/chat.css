@@ -58,7 +58,7 @@
 
 .chat-bar-input-block {
     position:-webkit-sticky;
-    position: sticky;
+    position: sticky; 
     bottom: 0;
     display: flex;
     float: left;
@@ -87,8 +87,16 @@
 
 
 
-
 /* Chat bubbles */
+
+#scroller * {
+    overflow-anchor: none;
+}
+
+#anchor {
+    overflow-anchor: auto;
+    height:1px;
+}
 
 #userInput {
     width: 75%;
@@ -136,6 +144,7 @@
     text-align: left;
 
     overflow-anchor: auto;
+    line-height: 1.5em;
 }
 
 .botText span {
@@ -147,7 +156,9 @@
     border-bottom-left-radius: 2px;
     max-width: 80%;
     margin-left: 10px;
-    animation: floatup .5s forwards
+    animation: floatup .5s forwards;
+
+    overflow-anchor: auto;
 }
 
 @keyframes floatup {

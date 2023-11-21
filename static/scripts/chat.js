@@ -102,10 +102,13 @@ $("#textInput").keypress(function(e){
     }
 })
 //function scrollj(){
-var messageBody = document.querySelector('#chatbox');
-   messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
+//var messageBody = document.querySelector('#chatbox');
+   //messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 
-const scrollingElement = document.getElementById("chatbox");
+let scroller = document.querySelector("scroller");
+let anchor = document.querySelector("anchor");
+
+const scrollingElement = document.getElementById("scroller");
 
 const config = { childList: true };
 
