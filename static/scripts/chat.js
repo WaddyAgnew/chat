@@ -130,6 +130,6 @@ const observer = new MutationObserver(callback);
 observer.observe(targetNode, config);
 //}
 //scrollj(); 
----- come back to understnd to keep chat to bottom scroll
+---- come back to understand to keep chat to bottom scroll
 */
 //calender project
