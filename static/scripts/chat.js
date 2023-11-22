@@ -44,6 +44,7 @@ function firstBotMessage(){
 
     $("#chat-timestamp").append(time); // jquary.look into
     document.getElementById("userInput").scrollIntoView(false);
+    
 }
 
 firstBotMessage();
@@ -54,6 +55,8 @@ function getHardResponse(userText){
     $("#chatbox").append(botHtml);
 
     document.getElementById("chat-bar-bottom").scrollIntoView(false);
+
+    //scroller.insertBefore(botHtml, anchor); chat sroll to bottom
 }
 
 function getResponse(){
@@ -101,14 +104,17 @@ $("#textInput").keypress(function(e){
         getResponse();
     }
 })
+
+/*
+
 //function scrollj(){
 //var messageBody = document.querySelector('#chatbox');
    //messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 
-let scroller = document.querySelector("scroller");
-let anchor = document.querySelector("anchor");
+let scroller = document.querySelector('#scroller');
+let anchor = document.querySelector('#anchor');
 
-const scrollingElement = document.getElementById("scroller");
+const targetNode = document.getElementById("scroller");
 
 const config = { childList: true };
 
@@ -121,7 +127,9 @@ const callback = function (mutationsList, observer) {
 };
 
 const observer = new MutationObserver(callback);
-observer.observe(scrollingElement, config);
+observer.observe(targetNode, config);
 //}
 //scrollj(); 
+---- come back to understnd to keep chat to bottom scroll
+*/
 //calender project
