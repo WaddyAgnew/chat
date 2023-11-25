@@ -47,6 +47,11 @@ function firstBotMessage(){
     
 }
 
+function messageReact(){
+    const bubble = "+"
+     document.querySelector(".btnRec").innerHTML = '<p class="btnRec"><span>' + bubble + '</span></p>';
+}
+
 firstBotMessage();
 
 function getHardResponse(userText){

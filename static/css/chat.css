@@ -190,3 +190,11 @@
         border-radius: 0px;
     }
 }
+
+/* Chat bubbles reaction emoji */
+
+.btnRec span{
+    line-height: 1px;
+    color: black;
+    border-radius: 50px;
+}
