@@ -39,7 +39,7 @@ function getTime(){
 function firstBotMessage(){
     let firstMessage = "how it going?"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
-
+    
     let time = getTime();
 
     $("#chat-timestamp").append(time); // jquary.look into
@@ -48,16 +48,24 @@ function firstBotMessage(){
 }
 
 function messageReact(){
-    const bubble = "+"
-     document.querySelector(".btnRec").innerHTML = '<p class="btnRec"><span>' + bubble + '</span></p>';
+    let emoji =
+
+   // const bubble = document.createElement("div")// "+"
+    bubble.classList.add("btnRec")
+    bubble.textContent = emoji
+    // document.querySelector(".btnRec").innerHTML = '<p class="btnRec"><span>' + bubble + '</span></p>';
 }
 
 firstBotMessage();
 
 function getHardResponse(userText){
     let botResponse = getBotResponse(userText);
+    let bub = botResponse
     let botHtml  = '<p class="botText"><span>' + botResponse + '</span></p>';
-    $("#chatbox").append(botHtml);
+    let bubble = '<p class="btnRec"><span>' + bub + '</span></p>';
+  
+
+    $("#chatbox").append(botHtml,bubble);
 
     document.getElementById("chat-bar-bottom").scrollIntoView(false);
 
