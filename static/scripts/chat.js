@@ -48,11 +48,11 @@ function firstBotMessage(){
 }
 
 function messageReact(){
-    let emoji =
+    let emoji = 1;
 
    // const bubble = document.createElement("div")// "+"
-    bubble.classList.add("btnRec")
-    bubble.textContent = emoji
+   // bubble.classList.add("btnRec")
+    //bubble.textContent = emoji
     // document.querySelector(".btnRec").innerHTML = '<p class="btnRec"><span>' + bubble + '</span></p>';
 }
 
@@ -60,12 +60,13 @@ firstBotMessage();
 
 function getHardResponse(userText){
     let botResponse = getBotResponse(userText);
-    let bub = botResponse
+    
     let botHtml  = '<p class="botText"><span>' + botResponse + '</span></p>';
-    let bubble = '<p class="btnRec"><span>' + bub + '</span></p>';
-  
 
-    $("#chatbox").append(botHtml,bubble);
+    //let bubble = document.getquerySelector(".plus");
+    
+
+    $(".chatbox").append(botHtml);
 
     document.getElementById("chat-bar-bottom").scrollIntoView(false);
 
@@ -82,7 +83,7 @@ function getResponse(){
     let userHtml  = '<p class="userText"><span>' + userText + '</span></p>';
 
     $("#textInput").val("");
-    $("#chatbox").append(userHtml);
+    $(".chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(false);
 
     setTimeout(()=> {
@@ -97,7 +98,7 @@ function buttonSendText(sampleText){
     let userHtml  = '<p class="userText"><span>' + sampleText + '</span></p>';
 
     $("#textInput").val("");
-    $("#chatbox").append(userHtml);
+    $(".chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(false);
 
 }
@@ -121,7 +122,7 @@ $("#textInput").keypress(function(e){
 /*
 
 //function scrollj(){
-//var messageBody = document.querySelector('#chatbox');
+//var messageBody = document.querySelector('.chatbox');
    //messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 
 let scroller = document.querySelector('#scroller');

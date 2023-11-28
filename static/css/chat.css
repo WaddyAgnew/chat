@@ -194,7 +194,7 @@
 
 /* Chat bubbles reaction emoji */
 
-.btnRec span {
+.plus span {
     z-index: 2;
     background-color: #5ca6fa;
     border-radius: 50%;
