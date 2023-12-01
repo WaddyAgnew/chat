@@ -63,11 +63,11 @@ function getHardResponse(userText){
     
     let botHtml  = '<p class="botText"><span>' + botResponse + '</span></p>';
 
-   // let bubble = '<p class="plus"><span>' + botResponse + '</span></p>';
+    let bubble = '<div class="plus"></div>';
     
 
     $(".chatbox").append(botHtml);
-    //$("p.plus").append(bubble);
+    $(".bottext").addClass(bubble);
     document.getElementById("chat-bar-bottom").scrollIntoView(false);
 
     //scroller.insertBefore(botHtml, anchor); chat sroll to bottom
