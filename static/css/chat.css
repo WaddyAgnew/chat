@@ -194,11 +194,12 @@
 
 /* Chat bubbles reaction emoji */
 
-.plus  {
+.plus span {
     z-index: 2;
     background-color: #5ca6fa;
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    
+     position: absolute;
+     
 }
