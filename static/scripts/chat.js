@@ -63,7 +63,7 @@ function getHardResponse(userText){
     
     let botHtml  = '<p class="botText"><span>' + botResponse + '</span></p>';
 
-    let bubble = '<div class="plus"></div>';
+    //let bubble = '<div class="plus"></div>';
     
 
     $(".chatbox").append(botHtml).addClass("plus");
