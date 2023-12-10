@@ -31,15 +31,18 @@
 
 .full-chat-block {
     width: 350px;
-    background: white;
+    background: rgb(54, 54, 54);
     text-align: center;
     overflow: auto;
-    scrollbar-width: none;
+    scrollbar-width: none; 
     height: max-content;
     transition: max-height 0.2s ease-out;
     
 }
 
+.full-chat-block::-webkit-scrollbar {
+    display: none;
+}
 .outer-container {
     min-height: 500px;
     bottom: 0%;
@@ -54,6 +57,7 @@
     left: 0;
     scroll-behavior: smooth;
     hyphens: auto;
+    color:white;
 }
 
 .chat-container::-webkit-scrollbar {
@@ -73,6 +77,7 @@
     background-color: rgb(235, 235, 235);
     border-radius: 10px 10px 0px 0px;
     padding: 10px 0px 10px 10px;
+    z-index: 3;
 }
 
 
@@ -116,7 +121,8 @@
     font-size: 16px;
     color: #000;
     background-color: white;
-    outline: none
+    outline: none;
+   
 }
 
 .userText {
@@ -155,7 +161,7 @@
     
     line-height: 1.5em;
     display: inline-block;
-    background: yellow;
+    background: white;
     padding: 10px;
     border-radius: 8px;
     border-bottom-left-radius: 2px;
@@ -198,12 +204,15 @@
 
 /* Chat bubbles reaction emoji */
 
-.plus  {
+#plus  {
     z-index: 2;
     background-color: #5ca6fa;
     border-radius: 50%;
     width: 20px;
     height: 20px;
-     position: absolute;
+    border:solid 1px;
+    position: relative;
+    top: -25px;
+    left: 2vh;
      
 }
