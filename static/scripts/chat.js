@@ -89,7 +89,7 @@ function getResponse(){
     setTimeout(()=> {
         getHardResponse(userText);
     },1000)
-
+    
    // scrollj(); 
     
 }
@@ -119,12 +119,14 @@ $("#textInput").keypress(function(e){
     }
 })
 
-/*
+
 
 //function scrollj(){
-//var messageBody = document.querySelector('.chatbox');
-   //messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
-
+    if(getHardResponse()){
+    var messageBody = document.getElementById('#scroller');
+    messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
+}
+/*
 let scroller = document.querySelector('#scroller');
 let anchor = document.querySelector('#anchor');
 
@@ -144,6 +146,6 @@ const observer = new MutationObserver(callback);
 observer.observe(targetNode, config);
 //}
 //scrollj(); 
----- come back to understand to keep chat to bottom scroll
+//--- come back to understand to keep chat to bottom scroll
 */
 //calender project

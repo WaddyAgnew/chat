@@ -16,7 +16,7 @@
     outline: none;
     font-size: 18px;
     border-radius: 10px 10px 0px 0px;
-    border: 3px solid white;
+    border: 3px solid;
     border-bottom: none;
     border-color: rgb(219, 68, 219);
 }
@@ -35,8 +35,10 @@
     text-align: center;
     overflow: auto;
     scrollbar-width: none; 
-    height: max-content;
+    height: max-content; 
+   /* height: 100.001vh; */
     transition: max-height 0.2s ease-out;
+   
     
 }
 
