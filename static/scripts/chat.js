@@ -1,5 +1,11 @@
 
 
+function scrollj(){
+   // if(getHardResponse()){
+    var messageBody = document.querySelector('.full-chat-block');
+    messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
+}
+
 
 // Collapsible
 var coll = document.getElementsByClassName("collapsible");
@@ -70,6 +76,8 @@ function getHardResponse(userText){
     $(".chatbox").append(bubble);
     document.getElementById("chat-bar-bottom").scrollIntoView(false);
 
+
+    scrollj();
     //scroller.insertBefore(botHtml, anchor); chat sroll to bottom
 }
 
@@ -116,16 +124,13 @@ buttonSendText("Heart clicked!")
 $("#textInput").keypress(function(e){
     if(e.which ==13){
         getResponse();
+        scrollj();
     }
 })
 
 
 
-//function scrollj(){
-    if(getHardResponse()){
-    var messageBody = document.getElementById('#scroller');
-    messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
-}
+
 /*
 let scroller = document.querySelector('#scroller');
 let anchor = document.querySelector('#anchor');
