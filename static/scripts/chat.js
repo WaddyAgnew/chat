@@ -1,10 +1,6 @@
 
 
-function scrollj(){
-   // if(getHardResponse()){
-    var messageBody = document.querySelector('.full-chat-block');
-    messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
-}
+
 
 
 // Collapsible
@@ -78,7 +74,6 @@ function getHardResponse(userText){
 
 
     scrollj();
-    //scroller.insertBefore(botHtml, anchor); chat sroll to bottom
 }
 
 function getResponse(){
@@ -98,7 +93,7 @@ function getResponse(){
         getHardResponse(userText);
     },1000)
     
-   // scrollj(); 
+    scrollj(); 
     
 }
 
@@ -113,7 +108,7 @@ function buttonSendText(sampleText){
 
 function sendButton(){
     getResponse();
-   // scrollj(); 
+    scrollj(); 
 }
 
 function heartButton(){
@@ -128,29 +123,11 @@ $("#textInput").keypress(function(e){
     }
 })
 
+function scrollj(){ 
+    var messageBody = document.querySelector('.full-chat-block');
+    messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
+}
 
 
 
-/*
-let scroller = document.querySelector('#scroller');
-let anchor = document.querySelector('#anchor');
-
-const targetNode = document.getElementById("scroller");
-
-const config = { childList: true };
-
-const callback = function (mutationsList, observer) {
-  for (let mutation of mutationsList) {
-    if (mutation.type === "childList") {
-      window.scrollTo(0, document.body.scrollHeight);
-    }
-  }
-};
-
-const observer = new MutationObserver(callback);
-observer.observe(targetNode, config);
-//}
-//scrollj(); 
-//--- come back to understand to keep chat to bottom scroll
-*/
 //calender project

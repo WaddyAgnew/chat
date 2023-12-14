@@ -216,5 +216,16 @@
     position: relative;
     top: -25px;
     left: 2vh;
-     
+    animation: floatup .5s forwards;
+
+}
+#plus:hover {
+    width: 25px;
+    height: 25px;
+}
+#bubble-icon {
+    margin-top:4px;
+}
+#bubble-icon:hover {
+    
 }
