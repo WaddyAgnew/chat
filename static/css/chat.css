@@ -219,13 +219,25 @@
     animation: floatup .5s forwards;
 
 }
+
 #plus:hover {
     width: 25px;
     height: 25px;
 }
+
 #bubble-icon {
-    margin-top:4px;
+    margin-top:2px;
 }
-#bubble-icon:hover {
-    
+
+.feelBar{
+    width:60px;
+    height: 25px;
+    border:solid 1px;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    position: relative;
+    top: -25px;
+    left: 2vh;
+    background-color: gold;
+
 }
