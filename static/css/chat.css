@@ -79,7 +79,7 @@
     background-color: rgb(235, 235, 235);
     border-radius: 10px 10px 0px 0px;
     padding: 10px 0px 10px 10px;
-    z-index: 3;
+    z-index: 10;
 }
 
 
@@ -207,7 +207,7 @@
 /* Chat bubbles reaction emoji */
 
 #plus  {
-    z-index: 2;
+    z-index: 5;
     background-color: #5ca6fa;
     border-radius: 50%;
     width: 20px;
@@ -217,18 +217,23 @@
     top: -25px;
     left: 2vh;
     animation: floatup .5s forwards;
-
+    cursor: pointer;
+    overflow: hidden;
 }
 
 #plus:hover {
-    width: 25px;
-    height: 25px;
+    width: 21px;
+    height: 21px;
+}
+
+.plusEx{
+    
 }
 
 #bubble-icon {
     margin-top:2px;
 }
-
+/*
 .feelBar{
     width:60px;
     height: 25px;
@@ -237,7 +242,7 @@
     border-bottom-right-radius: 30%;
     position: relative;
     top: -25px;
-    left: 2vh;
+    left: 1vh;
     background-color: gold;
-
 }
+*/
