@@ -206,6 +206,10 @@
 
 /* Chat bubbles reaction emoji */
 
+.fa-plus{
+   overflow: hidden;
+}
+
 .plus  {
     z-index: 5;
     background-color: #5ca6fa;
@@ -217,6 +221,7 @@
     top: -25px;
     left: 2vh;
     animation: floatup .5s forwards;
+
     cursor: pointer;
     overflow: hidden;
 }
@@ -228,12 +233,12 @@
 
 .plus.plus--expanded{
   width:70px;
-  animation: expand .15s ease;  
+  animation: expand .5s ease;  
 }
 
 .plus--unexpanded{
     width: 20px;
-    
+    animation: expand .5s ease;
 }
 
 @keyframes expand {
