@@ -206,7 +206,7 @@
 
 /* Chat bubbles reaction emoji */
 
-#plus  {
+.plus  {
     z-index: 5;
     background-color: #5ca6fa;
     border-radius: 50%;
@@ -221,13 +221,37 @@
     overflow: hidden;
 }
 
-#plus:hover {
+.plus:hover {
     width: 21px;
     height: 21px;
 }
 
-.plusEx{
+.plus.plus--expanded{
+  width:70px;
+  animation: expand .15s ease;  
+}
+
+.plus--unexpanded{
+    width: 20px;
     
+}
+
+@keyframes expand {
+    0%{
+        width: 20px;
+    }
+    100%{
+        width: 70px;
+    }
+
+}
+@keyframes unexpanded {
+    0%{
+        width: 70px;
+    }
+    100%{
+        width: 20px;
+    }
 }
 
 #bubble-icon {

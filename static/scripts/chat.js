@@ -65,7 +65,7 @@ function getHardResponse(userText){
     
     let botHtml  = '<p class="botText"><span>' + botResponse + '</span></p>';
 
-    let bubble = '<div id="plus"> <i id="bubble-icon" class="fa-solid fa-plus fa-1xl"></i> </div>';
+    let bubble = '<div class="plus"> <i id="bubble-icon" class="fa-solid fa-plus fa-1xl"></i> </div>';
     
 
     $(".chatbox").append(botHtml)
@@ -128,6 +128,10 @@ function scrollj(){
     messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 }
 
-
+function expand(dot){
+    dot.classList.toggle('plus--expanded');
+        if(!dot.classList.contains('plus--expanded'))
+    dot.classList.toggle('plus--unexpanded');
+}
 
 //calender project
