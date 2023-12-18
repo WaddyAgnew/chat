@@ -64,15 +64,15 @@ function getHardResponse(userText){
     let botResponse = getBotResponse(userText);
     
     let botHtml  = '<p class="botText"><span>' + botResponse + '</span></p>';
-
-    let bubble = '<div class="plus"> <i id="bubble-icon" class="fa-solid fa-plus fa-1xl"></i> </div>';
     
+    let bubble = '<div class="plus"> <i id="bubble-icon" class="fa-solid fa-plus fa-1xl"></i> </div>';
+   
 
     $(".chatbox").append(botHtml)
-    $(".chatbox").append(bubble);
+    $(".chatbox").append(bubble).expand();
     document.getElementById("chat-bar-bottom").scrollIntoView(false);
 
-
+    
     scrollj();
 }
 
@@ -94,7 +94,7 @@ function getResponse(){
     },1000)
     
     scrollj(); 
-    
+
 }
 
 function buttonSendText(sampleText){
@@ -128,9 +128,15 @@ function scrollj(){
     messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 }
 
+// Reaction Button
 function expand(dot){
     dot.classList.toggle('plus--expanded');
+
         if(!dot.classList.contains('plus--expanded'))
+    dot.classList.toggle('plus--unexpanded');
+
+    else if(dot.classList.contains('plus--expanded') &&
+    dot.classList.contains('plus--unexpanded'))
     dot.classList.toggle('plus--unexpanded');
 }
 
