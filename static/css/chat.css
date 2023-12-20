@@ -211,6 +211,7 @@
    color: black;
    position: absolute;
    left: 3px;
+   cursor: pointer;
 }
 
 .plus  {
@@ -225,7 +226,7 @@
     left: 2vh;
     animation: floatup .5s forwards;
 
-    cursor: pointer;
+    
     overflow: hidden;
 }
 

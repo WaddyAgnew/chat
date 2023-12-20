@@ -69,7 +69,7 @@ function getHardResponse(userText){
    
 
     $(".chatbox").append(botHtml)
-    $(".chatbox").append(bubble).expand();
+    $(".chatbox").append(bubble);
     document.getElementById("chat-bar-bottom").scrollIntoView(false);
 
     
