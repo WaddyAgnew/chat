@@ -26,11 +26,15 @@
                             
                                 <h5 id="chat-timestamp"></h5>
                                 <div id="scroller">
+                                    <div class="post"></div> /*were the reation are going
                                     <p id="botStarterMessage"  class="botText" ><span> Loading...</span>  </p>
                                   
                                     <div class="plus"  onclick="expand(this)">
                                         <i id="bubble-icon" class="fa-solid fa-plus fa-1xl"></i>
-                                        <div class="feelBar"><i class="fa-solid fa-face-grin-squint-tears"></i></div>
+                                        <div class="feelBar">
+                                            <i class="fa-solid fa-face-grin-squint-tears" style="color:yellow" onclick="post(this)"></i>
+                                            <i class="fa-solid fa-face-angry" style="color:red" onclick="post(this)"></i>
+                                        </div>
                                     </div>
                                     
                                 </div>

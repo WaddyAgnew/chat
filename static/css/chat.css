@@ -236,8 +236,8 @@
 }
 
 .plus.plus--expanded{
-  width:70px;
-  animation: expand .5s ease;  
+  width:100px;
+  animation: expanded .5s ease-in-out;
   border-top-right-radius:25px;
   border-bottom-right-radius:25px;
   border-top-left-radius:25px;
@@ -246,21 +246,21 @@
 
 .plus--unexpanded{
     width: 20px;
-    animation: expand .5s ease;
+    animation: unexpanded .5s ease-out;
 }
 
-@keyframes expand {
+@keyframes expanded {
     0%{
         width: 20px;
     }
     100%{
-        width: 70px;
+        width: 100px;
     }
 
 }
 @keyframes unexpanded {
     0%{
-        width: 70px;
+        width: 100px;
     }
     100%{
         width: 20px;
@@ -271,6 +271,11 @@
     margin-top:2px;
 }
 
+.fa-face-grin-squint-tears:before, .fa-grin-squint-tears:before {
+    content: "\f586";
+    padding-right: 5px;
+}
+
 .feelBar{
    visibility: hidden;
    
@@ -278,4 +283,12 @@
 
 .plus--expanded > .feelBar{
     visibility:visible;
+    position: relative;
+    left: 20px;
+    top:2px;
+    cursor: pointer;
+    justify-content: end;
+    display: flex;
+    max-width: 77%;
 }
+

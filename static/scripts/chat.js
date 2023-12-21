@@ -63,7 +63,10 @@ function getHardResponse(userText){
     let botHtml  = '<p class="botText"><span>' + botResponse + '</span></p>';
     
     let bubble = '<div class="plus" onclick="expand(this)">'+
-     '<i id="bubble-icon" class="fa-solid fa-plus fa-1xl"></i> </div>';
+     '<i id="bubble-icon" class="fa-solid fa-plus fa-1xl"></i>'+
+     '<div class="feelBar">'+
+     '<i class="fa-solid fa-face-grin-squint-tears" style="color:yellow" onclick="post(this)"></i>'+
+     '<i class="fa-solid fa-face-angry" style="color:red" onclick="post(this)"></i></div> </div>';
    
 
     $(".chatbox").append(botHtml)
