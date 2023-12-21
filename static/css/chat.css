@@ -270,16 +270,12 @@
 #bubble-icon {
     margin-top:2px;
 }
-/*
+
 .feelBar{
-    width:60px;
-    height: 25px;
-    border:solid 1px;
-    border-top-right-radius: 30%;
-    border-bottom-right-radius: 30%;
-    position: relative;
-    top: -25px;
-    left: 1vh;
-    background-color: gold;
+   visibility: hidden;
+   
 }
-*/
+
+.plus--expanded > .feelBar{
+    visibility:visible;
+}

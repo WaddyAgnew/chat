@@ -52,10 +52,7 @@ function firstBotMessage(){
 function messageReact(){
     let emoji = 1;
 
-   // const bubble = document.createElement("div")// "+"
-   // bubble.classList.add("btnRec")
-    //bubble.textContent = emoji
-    // document.querySelector(".btnRec").innerHTML = '<p class="btnRec"><span>' + bubble + '</span></p>';
+
 }
 
 firstBotMessage();
@@ -65,7 +62,8 @@ function getHardResponse(userText){
     
     let botHtml  = '<p class="botText"><span>' + botResponse + '</span></p>';
     
-    let bubble = '<div class="plus"> <i id="bubble-icon" class="fa-solid fa-plus fa-1xl"></i> </div>';
+    let bubble = '<div class="plus" onclick="expand(this)">'+
+     '<i id="bubble-icon" class="fa-solid fa-plus fa-1xl"></i> </div>';
    
 
     $(".chatbox").append(botHtml)
@@ -128,14 +126,14 @@ function scrollj(){
     messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 }
 
-// Reaction Button
+// Reaction Button scroll
 function expand(dot){
     dot.classList.toggle('plus--expanded');
 
         if(!dot.classList.contains('plus--expanded'))
     dot.classList.toggle('plus--unexpanded');
 
-    else if(dot.classList.contains('plus--expanded') &&
+        else if(dot.classList.contains('plus--expanded') &&
     dot.classList.contains('plus--unexpanded'))
     dot.classList.toggle('plus--unexpanded');
 }
