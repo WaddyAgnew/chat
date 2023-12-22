@@ -224,9 +224,7 @@
     position: relative;
     top: -25px;
     left: 2vh;
-    animation: floatup .5s forwards;
-
-    
+    animation: floatup .5s forwards; 
     overflow: hidden;
 }
 
@@ -292,3 +290,18 @@
     max-width: 77%;
 }
 
+.post{
+    background-color:pink;
+    width: 50px;
+    height: 15px;
+    position: relative;
+    top:-85px;
+    left: 1vh;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
+    z-index: 3;
+    animation: floatup .5s forwards; 
+    overflow: hidden;
+}
