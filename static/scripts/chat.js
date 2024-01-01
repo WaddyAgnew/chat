@@ -143,7 +143,7 @@ function expand(dot){
     dot.classList.toggle('plus--unexpanded');
 }
 
-function post(){
-    
+function post(lable){
+    lable.classList.toggle('post--red')
 }
 //calender project

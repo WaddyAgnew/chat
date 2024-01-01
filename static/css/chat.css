@@ -290,6 +290,8 @@
     max-width: 77%;
 }
 
+/* Reaction Post */
+
 .post{
     background-color:pink;
     width: 50px;
@@ -304,4 +306,10 @@
     z-index: 3;
     animation: floatup .5s forwards; 
     overflow: hidden;
+    visibility: hidden;
+}
+
+.post--red > .fa-solid fa-face-angry{
+    visibility:visible;
+    
 }
