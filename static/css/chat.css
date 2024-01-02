@@ -309,7 +309,7 @@
     visibility: hidden;
 }
 
-.post--red > .fa-solid fa-face-angry{
+.post--red > .post > .fa-solid fa-face-angry {
     visibility:visible;
     
 }
