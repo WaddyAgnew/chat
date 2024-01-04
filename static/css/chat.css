@@ -309,7 +309,7 @@
     visibility: hidden;
 }
 
-.post--red > .post > .fa-solid fa-face-angry {
+ .post.post--red {
     visibility:visible;
     
 }
