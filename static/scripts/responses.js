@@ -1,6 +1,6 @@
 function getBotResponse(input) {
 
-    const words = ["name","home","feeling"];
+    const words = new Array("name","home","feeling");
     const keywords = words.values; 
 
     if (input == "rock"){
@@ -11,8 +11,14 @@ function getBotResponse(input) {
         return "rock";
     }
 
-    if (input == "name"){
+
+
+    if (words.includes(input)) {
         return "love";
+    }
+            // both way works but vv bottom need a real array setup
+    if (input == "home"){
+        return "hate";
     }
 
     // other responses
