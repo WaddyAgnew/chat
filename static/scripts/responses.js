@@ -1,10 +1,18 @@
 function getBotResponse(input) {
+
+    const words = ["name","home","feeling"];
+    const keywords = words.values; 
+
     if (input == "rock"){
         return "paper";
     }else if(input == "paper") {
         return "scissors";
     }else if(input == "scissors") {
         return "rock";
+    }
+
+    if (input == "name"){
+        return "love";
     }
 
     // other responses
@@ -15,7 +23,7 @@ function getBotResponse(input) {
     }else if(input == "hi"){
         return "Whats your name";
     }else {
-        return "Try asking something else..."
+        return "Try asking something else...";
     }
 
 }
