@@ -1,7 +1,7 @@
 function getBotResponse(input) {
 
-    const words = new Array("name","home","feeling","sup");
-   // const keywords = words.values; 
+    const words = ["name","home","feeling","sup"];
+    const keywords = words.values; 
 
     if (input == "rock"){
         return "paper";
@@ -12,18 +12,19 @@ function getBotResponse(input) {
     }
 
 
+    //const greet = `Whats ur name`
 
-    if (words.includes(input)) {
-        return "Whats ur name";
-        console.log("Whats your name")
+   // if (words.includes(input)) {
+       // return "Whats ur name";
+    //    console.log(greet)
         //if (i){
            // return "hi"+ input;
         //}
-    }
-            // both way works but vv bottom need a real array setup
-   // if (input == "home"){
-       // return "hate";
    // }
+            // both way works but vv bottom need a real array setup
+    if (input == "home"){
+        console.log("hate")
+    }
 
     // other responses
     if (input == "hello") {
@@ -36,9 +37,7 @@ function getBotResponse(input) {
     else {
         return "try something else..."
     }
-    else {
-        return 'Try'
-    }
+   
 
-    if(true);
+    
 }
