@@ -1,4 +1,4 @@
-function getBotResponse(input,name) {
+function getBotResponse(input) {
 
     const words = new Array("home","feeling","sup");
     const keywords = words.values; 
