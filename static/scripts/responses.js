@@ -1,7 +1,7 @@
 function getBotResponse(input) {
 
     const words = new Array("home","feeling","sup");
-    const keywords = words.values; 
+    //const keywords = words.values; 
 
     if (input == "rock"){
         return "paper";
@@ -37,7 +37,7 @@ function getBotResponse(input) {
         return "Whats your name";
     }
     else {
-        return "try something else..."
+        return "try something else.."
     }
    
 
