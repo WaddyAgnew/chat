@@ -14,15 +14,15 @@ function getBotResponse(input) {
 
     const greet = `hey`;
 
-    if (words.includes(input)) {
+    //if (words.includes(input)) {
         
         //return "Whats ur name";
-        document.querySelector("botText").innerHTML= greet;
+       // document.querySelector("botText").innerHTML= greet;
        
         //if (i){
            // return "hi"+ input;
         //}
-    }
+  //  }
             // both way works but vv bottom need a real array setup
    // if (input == "home"){
     //    console.log("hate")
