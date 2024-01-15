@@ -14,6 +14,10 @@ function getBotResponse(input) {
 
     const greet = `hey`;
 
+    if(input == "word"){
+       return document.getElementsByClassName(".botText").textContent = "hehe";
+    }
+
     //if (words.includes(input)) {
         
         //return "Whats ur name";
