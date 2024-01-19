@@ -32,7 +32,7 @@ function getBotResponse(input) {
   //  }
             // both way works but vv bottom need a real array setup
    // if (input == "home"){
-    //    console.log("hate")
+    
     //}
 
     // other responses
