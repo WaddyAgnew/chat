@@ -1,6 +1,6 @@
 function getBotResponse(input) {
 
-    holder();
+    
 
     const words = new Array("home","feeling","sup");
     //const keywords = words.values; 
@@ -51,6 +51,4 @@ function getBotResponse(input) {
     
 }
 
-function holder(name){
 
-}
