@@ -17,7 +17,7 @@ function getBotResponse(input) {
     const greet = `hey`;
 
     if(input == name){
-       // return "sup" name;
+       
        //return document.getElementsByClassName(".botText").textContent = "hehe";
     }
 
