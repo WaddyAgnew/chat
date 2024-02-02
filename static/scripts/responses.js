@@ -14,12 +14,6 @@ function getBotResponse(input) {
     }
 
 
-    const greet = `hey`;
-
-    if(input == name){
-       
-       //return document.getElementsByClassName(".botText").textContent = "hehe";
-    }
 
     //if (words.includes(input)) {
         
